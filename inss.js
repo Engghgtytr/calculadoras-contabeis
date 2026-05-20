@@ -1,4 +1,4 @@
-const salarioBruto = 5000
+const salarioBruto = document.getElementById("Salario")
 let inss = 0
 
 if(salarioBruto <= 1621){
@@ -12,5 +12,8 @@ if(salarioBruto <= 1621){
 }else{
     inss = 988.10
 }
+
+document.getElementById("button")
+addEventListener("click")
 
 console.log(inss.toFixed(2))
