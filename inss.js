@@ -12,8 +12,9 @@ if(salarioBruto <= 1621){
 }else{
     inss = 988.10
 }
+<button id="button">Calcule</button>
 
-document.getElementById("button")
+button.getElementById("button")
 addEventListener("click")
 
 console.log(inss.toFixed(2))
