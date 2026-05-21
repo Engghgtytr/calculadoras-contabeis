@@ -1,0 +1,30 @@
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100hv;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+    text-color: white;
+}
+
+input {
+    text-align: center;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+}
