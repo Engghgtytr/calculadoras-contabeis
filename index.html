@@ -1,22 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <link rel="stylesheet" href="css">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, initial-scale=1.0">
-    <title>Calculadora contabeis</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadoras Contábeis</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>calculadoras contabeis</h1>
+        <h1>📊 Calculadoras Contábeis</h1>
+        
         <div class="container-calculadoras">
-            <div class="calcula-inss">
-                <h2>calcula-ir</h2>
+            <!-- Calculadora INSS -->
+            <div class="card-calculadora">
+                <h2>📉 Calculadora INSS</h2>
+                <div class="campo">
+                    <label>Salário Bruto:</label>
+                    <input type="number" id="salario-inss" placeholder="Ex: 3500.00">
+                </div>
+                <button id="btn-inss">Calcular INSS</button>
+                <div id="resultado-inss" class="resultado"></div>
             </div>
-            <div class="calcula-ir">
-                <h2>Calculadora de imposto de renda</h2>
+
+            <!-- Calculadora IRPF -->
+            <div class="card-calculadora">
+                <h2>💰 Calculadora IRPF</h2>
+                <div class="campo">
+                    <label>Salário Bruto:</label>
+                    <input type="number" id="salario-ir" placeholder="Ex: 8500.00">
+                </div>
+                <div class="campo">
+                    <label>Dependentes:</label>
+                    <select id="dependentes">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+                <div class="campo">
+                    <label>Paga Pensão?</label>
+                    <select id="pensao">
+                        <option value="nao">Não</option>
+                        <option value="sim">Sim</option>
+                    </select>
+                </div>
+                <div class="campo" id="campo-valor-pensao" style="display: none;">
+                    <label>Valor da Pensão (R$):</label>
+                    <input type="number" id="valor-pensao" placeholder="Ex: 500.00">
+                </div>
+                <button id="btn-ir">Calcular IRPF</button>
+                <div id="resultado-ir" class="resultado"></div>
             </div>
         </div>
-    </div>  
+    </div>
+
+    <script src="inss.js"></script>
+    <script src="ir.js"></script>
 </body>
 </html>
